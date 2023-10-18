@@ -11,13 +11,13 @@
 const userTeamArray = [
     {
         name: 'Wayne Barnett',
-        role: 'Founder & CEO	',
+        role: 'Founder & CEO',
         image: 'wayne-barnett-founder-ceo.jpg',
 
     },
     {
         name: 'Angela Caroll',
-        role: 'Chief Editor	',
+        role: 'Chief Editor',
         image: 'angela-caroll-chief-editor.jpg',
 
     },
@@ -35,7 +35,7 @@ const userTeamArray = [
     },
     {
         name: 'Scott Estrada',
-        role: 'Developer	',
+        role: 'Developer',
         image: 'scott-estrada-developer.jpg',
 
     },
@@ -46,3 +46,16 @@ const userTeamArray = [
 
     }
 ]
+
+// - per separare gli oggetti dentro l'array dobbiamo utilizzare un ciclo for per ciclare i diversi elementi
+
+for (let i = 0; i < userTeamArray.length; i++) {
+
+    // - prendo ogni utente corrente dentro l'array
+    const usersCurrent = userTeamArray[i];
+    // console.log(usersCurrent);
+
+    // - prendiamo i valori degli oggetti di ogni utente dentro l'array
+    const usersDetails = `${usersCurrent.name} ${usersCurrent.role} ${usersCurrent.image}`;
+    console.log(usersDetails);
+}
