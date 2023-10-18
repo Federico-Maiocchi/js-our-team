@@ -6,13 +6,14 @@
 // - prendiamo l'elemento ROW nel DOM dove inseriremo tutti gli utenti
 const rowDomElement = document.querySelector('.row');
 
-// - fare un array di oggetti dove ci sarà la lista dei membri del team con i loro dettagli
+// - fare un array di oggetti dove ci sarà la lista dei membri del team con i loro dettagli (proprietà)
 //     - nome e cognome
 //     - posizione lavorativa
 //     - immagine
 
 const userTeamArray = [
     {
+        // - name è la chiave(key) l'assegnazione (valore) = proprietà
         name: 'Wayne Barnett',
         role: 'Founder & CEO',
         image: 'wayne-barnett-founder-ceo.jpg',
@@ -63,15 +64,16 @@ for (let i = 0; i < userTeamArray.length; i++) {
     console.log(usersDetails);
 
     // - creiamo 6 elementi nel DOM
+    // - e ci collegheremo gli oggetti dell'array dentro
     const htmlStringUsers = `
     <div class="col-4">
         <div class="card">
             <figure class="card-image">
-                <img src="./img/angela-caroll-chief-editor.jpg" alt="angela">
+                <img src="./img/${usersCurrent.image}" alt="${usersCurrent.name}">
             </figure>
             <div>
-                <h3 class="name">Angle Caroll</h3>
-                <p class="work">Chieaf Editor</p> 
+                <h3 class="name">${usersCurrent.name}</h3>
+                <p class="work">${usersCurrent.role}</p> 
             </div>
         </div>
     </div>
