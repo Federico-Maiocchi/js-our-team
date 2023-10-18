@@ -3,6 +3,9 @@
 
 // console.log('Our Team');
 
+// - prendiamo l'elemento ROW nel DOM dove inseriremo tutti gli utenti
+const rowDomElement = document.querySelector('.row');
+
 // - fare un array di oggetti dove ci sarà la lista dei membri del team con i loro dettagli
 //     - nome e cognome
 //     - posizione lavorativa
@@ -58,4 +61,25 @@ for (let i = 0; i < userTeamArray.length; i++) {
     // - prendiamo i valori degli oggetti di ogni utente dentro l'array
     const usersDetails = `${usersCurrent.name} ${usersCurrent.role} ${usersCurrent.image}`;
     console.log(usersDetails);
+
+    // - creiamo 6 elementi nel DOM
+    const htmlStringUsers = `
+    <div class="col-4">
+        <div class="card">
+            <figure class="card-image">
+                <img src="./img/angela-caroll-chief-editor.jpg" alt="angela">
+            </figure>
+            <div>
+                <h3 class="name">Angle Caroll</h3>
+                <p class="work">Chieaf Editor</p> 
+            </div>
+        </div>
+    </div>
+    `
+    console.log(htmlStringUsers);
+
+    // - stampo nel DOM dento al div contenete la classe row, le stringhe degli utenti prese dall'array
+    rowDomElement.innerHTML += htmlStringUsers;
+
+    
 }
