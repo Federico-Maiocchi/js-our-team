@@ -82,6 +82,4 @@ for (let i = 0; i < userTeamArray.length; i++) {
 
     // - stampo nel DOM dento al div contenete la classe row, le stringhe degli utenti prese dall'array
     rowDomElement.innerHTML += htmlStringUsers;
-
-    
 }
