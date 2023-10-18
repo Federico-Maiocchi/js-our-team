@@ -1,0 +1,53 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+    padding: 10px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.card {
+    border: 1px solid black;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+figure {
+    margin-bottom: 10px;
+}
+
+.name {
+    margin-bottom: 10px;
+}
+
+.work {
+    margin-bottom: 15px;
+}
